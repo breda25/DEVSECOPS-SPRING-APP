@@ -8,15 +8,16 @@ pipeline {
             steps { sh 'mvn clean compile' }
         }
         stage('Security Scan: OWASP') {
-    steps {
-        withCredentials([string(credentialsId: 'NVD-API-KEY', variable: 'NVD_KEY')]) {
+            // Move environment here, outside of steps!
             environment {
                 JAVA_OPTS = "-Xmx1024m"
             }
-            dependencyCheck additionalArguments: "--nvdApiKey ${NVD_KEY} --format HTML", odcInstallation: 'DP-Check'
+            steps {
+                withCredentials([string(credentialsId: 'NVD-API-KEY', variable: 'NVD_KEY')]) {
+                    dependencyCheck additionalArguments: "--nvdApiKey ${NVD_KEY} --format HTML", odcInstallation: 'DP-Check'
+                }
+            }
         }
-    }
-}
         stage('Security Scan: SonarQube') {
     steps {
         withSonarQubeEnv('SonarQube') { // 'SonarQube' must match the name in System settings
