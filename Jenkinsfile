@@ -8,17 +8,21 @@ pipeline {
             steps { sh 'mvn clean compile' }
         }
         stage('Security Scan: OWASP') {
-            // Move environment here, outside of steps!
             environment {
                 JAVA_OPTS = "-Xmx1024m"
             }
             steps {
                 withCredentials([string(credentialsId: 'NVD-API-KEY', variable: 'NVD_KEY')]) {
-                    dependencyCheck additionalArguments: "--nvdApiKey ${NVD_KEY} --format HTML", odcInstallation: 'DP-Check'
+                    // Added --data parameter to point to the Volume Mount
+                    dependencyCheck additionalArguments: """
+                        --nvdApiKey ${NVD_KEY} 
+                        --format HTML 
+                        --data /home/jenkins/agent/nvd-data
+                    """, odcInstallation: 'DP-Check'
                 }
             }
         }
-        stage('Security Scan: SonarQube') {
+    stage('Security Scan: SonarQube') {
     steps {
         withSonarQubeEnv('SonarQube') { // 'SonarQube' must match the name in System settings
             sh 'mvn sonar:sonar -Dsonar.token=$SONAR_AUTH_TOKEN'
