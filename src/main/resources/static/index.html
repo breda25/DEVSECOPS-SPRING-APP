@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 Iran War - Wikipedia</title>
+    <title>2026 Iran war - Wikipedia</title>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -27,6 +27,7 @@
             padding: 20px;
             font-size: 0.85em;
             color: #c8ccd1;
+            flex-shrink: 0;
         }
         .content {
             background-color: #202122;
@@ -35,6 +36,8 @@
             padding: 30px 40px;
             flex-grow: 1;
             min-height: 100vh;
+            max-width: calc(100vw - 216px);
+            box-sizing: border-box;
         }
         h1 {
             font-family: 'JetBrains Mono', monospace;
@@ -68,7 +71,7 @@
         .infobox {
             float: right;
             clear: right;
-            width: 315px;
+            width: 350px;
             background-color: #2a2b2c;
             border: 1px solid #54595d;
             margin: 0.5em 0 1em 1em;
@@ -81,16 +84,16 @@
             text-align: left;
             vertical-align: top;
             background-color: #383b3d;
-            padding: 0.2em 0.4em;
+            padding: 0.4em;
         }
         .infobox td {
             vertical-align: top;
-            padding: 0.2em 0.4em;
+            padding: 0.4em;
         }
         .infobox caption {
             font-weight: bold;
             font-size: 1.25em;
-            padding: 0.2em;
+            padding: 0.4em;
             background-color: #404346;
             color: #fff;
         }
@@ -117,14 +120,17 @@
         .toc ul {
             list-style-type: none;
             padding-left: 0;
+            margin: 0;
         }
         .toc ul ul {
             padding-left: 20px;
         }
-        .note {
-            font-size: 0.8em;
+        .note, .hatnote {
+            font-size: 0.9em;
             color: #a2a9b1;
             margin-bottom: 10px;
+            padding-left: 10px;
+            border-left: 3px solid #54595d;
         }
         .sidebar-logo-container {
             font-weight: bold; font-size: 1.2em; margin-bottom: 20px; text-align: center; color: #eaecf0;
@@ -151,6 +157,25 @@
             padding: 20px;
             box-sizing: border-box;
             text-align: center;
+            min-height: 150px;
+        }
+        ul, ol {
+            margin-top: 0.3em;
+            margin-bottom: 0.3em;
+            padding-left: 1.5em;
+        }
+        .references {
+            font-size: 0.8em;
+            column-count: 2;
+            column-gap: 2em;
+        }
+        .references li {
+            margin-bottom: 0.5em;
+            break-inside: avoid;
+        }
+        sup.reference {
+            font-size: 0.75em;
+            line-height: 1;
         }
     </style>
 </head>
@@ -172,32 +197,33 @@
     </div>
     
     <div class="content">
-        <div class="note">From Wikipedia, the free encyclopedia (Archived 2026)</div>
-        <h1>2026 Iran War</h1>
+        <div class="hatnote">This article documents a current military conflict and may change rapidly. Please update outdated or incomplete information with citations to reliable sources. (March 2026)</div>
+        <h1>2026 Iran war</h1>
+        <div class="note">Part of the Middle Eastern crisis (2023–present)</div>
         
         <table class="infobox">
-            <caption>2026 Iran War</caption>
+            <caption>2026 Iran war</caption>
             <tr>
-                <td colspan="2" style="text-align: center;">
-                    <img src="images/infobox-map.jpg" alt="Map of the Middle East" style="max-width: 100%; border: 1px solid #54595d;" onerror="this.outerHTML='<div class=\'image-placeholder\'>[Image: images/infobox-map.jpg]<br>Geopolitical map of the Middle East</div>'">
-                    <div style="font-size: 0.8em; margin-top: 5px; color: #eaecf0;">Geopolitical map of the Middle East theatre of operations</div>
+                <td colspan="2" style="text-align: center; padding-bottom: 10px;">
+                    <img src="images/iran-war-map.jpg" alt="Map of the Middle East conflict zones" style="max-width: 100%; border: 1px solid #54595d;" onerror="this.outerHTML='<div class=\'image-placeholder\'>[Image: Map of conflict zones]<br>Locations struck by US/Israel and Iran/Axis</div>'">
                 </td>
             </tr>
             <tr>
                 <th scope="row">Date</th>
-                <td>28 February 2026 &ndash; present<br><span class="note">(Ongoing)</span></td>
+                <td>28 February 2026 &ndash; present<br>(2 weeks and 1 day)</td>
             </tr>
             <tr>
                 <th scope="row">Location</th>
-                <td>Middle East, Iran, Israel, Cyprus, Red Sea, Persian Gulf, Caucasus</td>
+                <td>West Asia, Indian Ocean</td>
             </tr>
             <tr>
                 <th scope="row">Status</th>
                 <td><b>Ongoing</b><br>
-                    <ul>
-                        <li>Decapitation strikes in Tehran</li>
-                        <li>Strait of Hormuz closed to commercial shipping</li>
-                        <li>Global energy crisis triggered</li>
+                    <ul style="padding-left: 1em; margin-top: 0.2em;">
+                        <li>Assassination of Ali Khamenei and Iranian leaders, and the accession of Mojtaba Khamenei</li>
+                        <li>Iranian closure of the Strait of Hormuz</li>
+                        <li>Various European countries send forces to defend Cyprus against Iranian strikes</li>
+                        <li>Escalation between Hezbollah and Israel leads to the 2026 Lebanon war</li>
                     </ul>
                 </td>
             </tr>
@@ -207,19 +233,35 @@
             <tr>
                 <td style="width: 50%; border-right: 1px solid #54595d;">
                     <b>Coalition Forces:</b><br>
-                    <span style="display:inline-block; width:20px; text-align:center;">🇺🇸</span> United States<br>
-                    <span style="display:inline-block; width:20px; text-align:center;">🇮🇱</span> Israel<br>
+                    🇮🇱 Israel<br>
+                    🇺🇸 United States<br><br>
                     <b>Supported by:</b><br>
-                    <span style="display:inline-block; width:20px; text-align:center;">🇬🇧</span> United Kingdom<br>
-                    <span style="display:inline-block; width:20px; text-align:center;">🇨🇾</span> Cyprus (hosting)
+                    🇧🇭 Bahrain<br>
+                    🇫🇷 France<br>
+                    🇮🇶 Iraq (Kurdistan Region)<br>
+                    🇮🇹 Italy<br>
+                    🇯🇴 Jordan<br>
+                    🇰🇼 Kuwait<br>
+                    🇴🇲 Oman<br>
+                    🇶🇦 Qatar<br>
+                    🇸🇦 Saudi Arabia<br>
+                    🇹🇷 Turkey<br>
+                    🇦🇪 United Arab Emirates<br>
+                    🇬🇧 United Kingdom (Akrotiri and Dhekelia)<br>
+                    🇦🇿 Azerbaijan<br><br>
+                    <b>Non-state actors:</b><br>
+                    Ahwaz Falcons
                 </td>
                 <td>
+                    🇮🇷 <b>Iran</b><br><br>
                     <b>Axis of Resistance:</b><br>
-                    <span style="display:inline-block; width:20px; text-align:center;">🇮🇷</span> Iran<br>
-                    <span style="display:inline-block; width:20px; text-align:center;">🇾🇪</span> Houthis (Yemen)<br>
-                    <span style="display:inline-block; width:20px; text-align:center;">🇱🇧</span> Hezbollah (Lebanon)<br>
-                    <span style="display:inline-block; width:20px; text-align:center;">🇮🇶</span> PMF (Iraq)<br>
-                    <span style="display:inline-block; width:20px; text-align:center;">🇸🇾</span> Syria
+                    🇱🇧 Hezbollah<br>
+                    🇮🇶 Popular Mobilization Forces<br>
+                    🇮🇶 Islamic Resistance in Iraq<br>
+                    🇱🇧 Islamic Group<br>
+                    🇵🇸 Hamas<br>
+                    🇵🇸 Palestinian Islamic Jihad<br><br>
+                    🇸🇾 Syria
                 </td>
             </tr>
             <tr>
@@ -227,38 +269,25 @@
             </tr>
             <tr>
                 <td style="border-right: 1px solid #54595d;">
-                    🇺🇸 US President<br>
-                    🇺🇸 CENTCOM Commander<br>
-                    🇮🇱 Israeli Prime Minister<br>
-                    🇮🇱 Chief of General Staff
+                    🇮🇱 Benjamin Netanyahu<br>
+                    🇮🇱 Israel Katz<br>
+                    🇮🇱 Eyal Zamir<br>
+                    🇮🇱 Tomer Bar<br>
+                    🇺🇸 Donald Trump<br>
+                    🇺🇸 Pete Hegseth<br>
+                    🇺🇸 Dan Caine<br>
+                    🇺🇸 Brad Cooper
                 </td>
                 <td>
-                    🇮🇷 Supreme Leader<br>
-                    🇮🇷 President of Iran<br>
-                    🇮🇷 IRGC Commander-in-Chief<br>
-                    🇱🇧 Hezbollah Secretary-General<br>
-                    🇾🇪 Abdul-Malik al-Houthi
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" class="header">Strength</td>
-            </tr>
-            <tr>
-                <td style="border-right: 1px solid #54595d;">
-                    <b>United States:</b><br>
-                    3 Carrier Strike Groups<br>
-                    150+ Strategic Bombers<br>
-                    2,500+ Aircraft<br>
-                    <b>Israel:</b><br>
-                    169,500 Active personnel<br>
-                    400,000 Reserve personnel
-                </td>
-                <td>
-                    <b>Iran:</b><br>
-                    610,000 Active personnel<br>
-                    350,000 Reserve personnel<br>
-                    3,000+ Ballistic missiles<br>
-                    10,000+ Shahed drones
+                    🇮🇷 Ali Khamenei <b>&dagger;</b><br>
+                    🇮🇷 Mojtaba Khamenei (WIA)<br>
+                    🇮🇷 Masoud Pezeshkian<br>
+                    🇮🇷 Gholam-Hossein Mohseni-Eje'i<br>
+                    🇮🇷 Alireza Arafi<br>
+                    🇮🇷 Ali Larijani<br>
+                    🇮🇷 Aziz Nasirzadeh <b>&dagger;</b><br>
+                    🇮🇷 Abdolrahim Mousavi <b>&dagger;</b><br>
+                    🇮🇷 Mohammad Pakpour <b>&dagger;</b>
                 </td>
             </tr>
             <tr>
@@ -266,97 +295,134 @@
             </tr>
             <tr>
                 <td style="border-right: 1px solid #54595d;">
-                    <b>Military:</b><br>
-                    245 killed<br>
-                    1,200 wounded<br>
-                    2 Destroyers damaged<br>
-                    14 Aircraft lost<br>
-                    <br>
-                    <b>Civilian:</b><br>
-                    1,850 killed (Israel)
+                    <b>Per US and Israel:</b><br>
+                    <b>Israel:</b><br>
+                    2 soldiers killed<br>
+                    17 civilians killed<br>
+                    2,975 injured<br>
+                    14 military personnel injured<br>
+                    <b>United States:</b><br>
+                    14 military personnel dead<br>
+                    200 wounded<br>
+                    At least 17 US sites in the Middle East damaged<br><br>
+                    <b>Per Iran:</b><br>
+                    <b>United States:</b><br>
+                    1 THAAD radar destroyed or damaged<br>
+                    1 AN/FPS-132 and 1 AN/TPS-59 destroyed
                 </td>
                 <td>
-                    <b>Military:</b><br>
-                    4,500+ killed<br>
-                    Unknown wounded<br>
-                    60% Air defense destroyed<br>
-                    4 Naval vessels sunk<br>
-                    <br>
-                    <b>Civilian:</b><br>
-                    12,400+ killed (Iran)<br>
-                    3,200+ killed (Lebanon/Syria)
+                    <b>Per Iran:</b><br>
+                    1,444 people killed and 18,551 wounded<br><br>
+                    <b>Per US and Israel:</b><br>
+                    6,000+ Iranian military personnel killed<br>
+                    ~15,000 Iranian military personnel wounded<br>
+                    190+ ballistic missile launchers destroyed<br>
+                    90 naval vessels sunk or damaged<br>
+                    Hezbollah: 350 fighters killed<br>
+                    PMF: 54 fighters killed, 81 injured<br><br>
+                    <b>Per human rights orgs:</b><br>
+                    HRANA: 3,040 people killed, including at least 1,319 civilians<br>
+                    Hengaw: At least 4,900 killed
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="font-size: 0.9em; background-color: #383b3d; padding: 0.5em;">
+                    <b>Other regions:</b><br>
+                    🇱🇧 Lebanon: 773 killed, 1,933 injured<br>
+                    🇰🇼 Kuwait: 4 servicemen & 4 civilians killed<br>
+                    🇦🇪 UAE: 2 soldiers & 4 civilians killed<br>
+                    🇧🇭 Bahrain: 3 killed, 38 injured<br>
+                    🇸🇦 Saudi Arabia: 2 killed, 12 injured<br>
+                    🇴🇲 Oman: 3 killed<br>
+                    🇫🇷 France: 1 soldier killed
                 </td>
             </tr>
         </table>
 
-        <p>The <b>2026 Iran War</b> (also known as the <b>Third Persian Gulf War</b>) is an ongoing major armed conflict primarily between a United States-led coalition alongside Israel against the Islamic Republic of Iran and its allied proxy network, commonly referred to as the Axis of Resistance. The war officially began on 28 February 2026 following a series of pre-emptive, decapitation strikes against Iranian military and political leadership targets.</p>
+        <p>On 28 February 2026, Israel and the United States launched surprise airstrikes on multiple sites and cities across Iran, killing Supreme Leader Ali Khamenei and numerous other Iranian officials. Iran responded with missile and drone strikes against Israel, US bases, and US-allied countries in the region.</p>
 
-        <p>Tensions in the region had been steadily escalating following the conclusion of the 2023–2025 regional crisis, which saw the normalization of limited cross-border skirmishes and drone warfare. Following intelligence reports indicating the imminent deployment of a nuclear device by the Islamic Revolutionary Guard Corps (IRGC), a joint military operation codenamed <a href="#">Epic Fury</a> (United States) and <a href="#">Roaring Lion</a> (Israel) initiated a series of coordinated strikes across Tehran and underground enrichment facilities.</p>
+        <p>After the Middle Eastern crisis began in 2023, Iran and Israel exchanged missile strikes in 2024, and Israel and the US launched airstrikes against Iran's nuclear facilities in the Twelve-Day War in June 2025. In January 2026, Iranian security forces killed thousands of protesters during the largest protests since the Islamic Revolution. US president Donald Trump threatened to take military action against the Iranian regime for the killings, as part of President Trump's desire to change the regime. Iran and the US held indirect nuclear negotiations in February, which saw substantial progress, according to the mediator. Meanwhile, the US undertook its largest military buildup in the Middle East since the US-led 2003 invasion of Iraq.</p>
 
-        <div style="float: left; width: 300px; margin: 0 1em 1em 0;">
-            <img src="images/tehran-strikes.jpg" alt="Tehran night strikes" style="max-width: 100%; border: 1px solid #54595d;" onerror="this.outerHTML='<div class=\'image-placeholder\' style=\'height: 200px;\'>[Image: images/tehran-strikes.jpg]<br>Tehran night strikes</div>'">
-            <div style="font-size: 0.85em; color: #eaecf0; padding-top: 5px;">Explosions visible over Tehran during the opening hours of Operation Epic Fury.</div>
-        </div>
+        <p>The joint US and Israeli attack assassinated Ali Khamenei, Iran's supreme leader, whose compound was destroyed. Other Iranian officials were also killed. Iran then launched hundreds of drones and ballistic missiles at targets in Israel and at US military bases in Bahrain, Jordan, Kuwait, Qatar, Saudi Arabia, Turkey, and the United Arab Emirates. There were civilian casualties in Iran, as well as damage to schools, hospitals, and cultural heritage sites. Civilian targets in Azerbaijan, Kurdistan, and Oman were targeted by Iran. Britain's Akrotiri military base on Cyprus was struck by a drone. The conflict between Hezbollah and Israel, which since 2024 had been limited to Israeli strikes on Hezbollah in Lebanon, escalated into the 2026 Lebanon war when Hezbollah resumed missile and drone fire at Israeli sites, and Israel greatly expanded its airstrikes in Lebanon and resumed the bombing of Hezbollah targets.</p>
 
-        <p>Iran responded with Operation <a href="#">True Promise IV</a>, launching an unprecedented barrage of over 285 ballistic missiles and 1,500 drones targeting Israeli infrastructure, as well as US regional bases in Bahrain, Kuwait, and the United Arab Emirates. The conflict rapidly expanded to include full mobilization of Iranian proxy groups across Iraq, Syria, Lebanon, and Yemen, leading to the closure of the Strait of Hormuz and a subsequent global economic shock.</p>
+        <p>The conflict led to immediate surges in oil and gas prices, widespread disruptions in aviation and tourism, and heightened volatility in financial markets. Iran forced the closure of the Strait of Hormuz and attacked energy facilities, disrupting global oil and gas shipments.</p>
 
-        <div class="toc" style="clear: left;">
+        <div class="toc">
             <div class="toc-title">Contents</div>
             <ul>
-                <li><a href="#Background">1 Background</a></li>
-                <li><a href="#Opening_Operations">2 Opening Operations</a>
+                <li><a href="#Background">1 Background</a>
                     <ul>
-                        <li><a href="#Epic_Fury">2.1 Operations Epic Fury & Roaring Lion</a></li>
+                        <li><a href="#US_relations">1.1 United States relations with Iran</a></li>
+                        <li><a href="#Nuclear_issue">1.2 Iran nuclear issue</a></li>
                     </ul>
                 </li>
-                <li><a href="#Retaliation">3 Retaliation Phase</a>
+                <li><a href="#Prelude">2 Prelude</a></li>
+                <li><a href="#Hostilities">3 Hostilities</a>
                     <ul>
-                        <li><a href="#True_Promise_IV">3.1 Operation True Promise IV</a></li>
+                        <li><a href="#First_week">3.1 First week (28 February – 6 March)</a></li>
+                        <li><a href="#Second_week">3.2 Second week (7–13 March)</a></li>
+                        <li><a href="#Third_week">3.3 Third week (14 March – present)</a></li>
                     </ul>
                 </li>
-                <li><a href="#Economic_Impact">4 Global Economic Impact</a></li>
-                <li><a href="#See_also">5 See also</a></li>
+                <li><a href="#Strikes_casualties">4 Strikes and casualties</a></li>
+                <li><a href="#Impact">5 Impact</a>
+                    <ul>
+                        <li><a href="#Economic">5.1 Economic and geopolitical impact</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
         <h2 id="Background">Background</h2>
-        <p>The strategic environment of the Middle East had deteriorated significantly since 2024. Despite international diplomatic efforts, the enrichment of uranium at the Fordow Fuel Enrichment Plant had allegedly reached weapons-grade (90%) by late 2025. On 15 February 2026, the International Atomic Energy Agency (IAEA) reported an "unexplained absence" of monitoring equipment at several key sites.</p>
+        <h3 id="US_relations">United States relations with Iran</h3>
+        <p>A US and UK-backed coup d'état in 1953 deposed Iranian prime minister Mohammad Mosaddegh and strengthened the rule of the Shah, Mohammad Reza Pahlavi. Resentment of the Shah's deference to Western interests led to the 1979 revolution in which he was overthrown, after which Iran became an Islamic republic, severed diplomatic ties with the United States and Israel, and held the American embassy staff hostage for over a year.</p>
 
-        <h2 id="Opening_Operations">Opening Operations</h2>
-        <h3 id="Epic_Fury">Operations Epic Fury & Roaring Lion</h3>
-        <p>At 02:45 IRST on 28 February 2026, the United States and Israel launched a massive, synchronized assault. Operation <i>Roaring Lion</i> focused on the suppression of enemy air defenses (SEAD), utilizing F-35I Adir stealth fighters to neutralize Iranian S-300 and domestically produced Bavar-373 anti-aircraft systems. Concurrently, Operation <i>Epic Fury</i> involved US B-2 Spirit bombers deploying GBU-57 Massive Ordnance Penetrators (MOPs) against deeply buried nuclear facilities in Natanz and Fordow.</p>
-        <p>The strikes also targeted command and control centers in Tehran, reportedly resulting in the deaths of several high-ranking IRGC commanders. A cyberattack attributed to Unit 8200 paralyzed Iran's national power grid for 48 hours, plunging the capital into darkness during the bombardment.</p>
+        <p>Tensions between Iran and the US and Israel further escalated following the October 7 attacks on Israel and the start of the Gaza war in 2023, during which Israel weakened Iranian-backed militias across the Middle East. Iran and Israel kept engaging in rhetoric in the months to come until Israel waged a 12-day war on Iran in June 2025 that included an American airstrike aimed at destroying Iran's nuclear facilities.</p>
 
-        <h2 id="Retaliation">Retaliation Phase</h2>
-        <h3 id="True_Promise_IV">Operation True Promise IV</h3>
+        <h3 id="Nuclear_issue">Iran nuclear issue</h3>
+        <p>The United States withdrawal from the JCPOA in 2018 led to the re-imposition of sanctions on Iran. The second Trump administration reimposed the "maximum pressure" approach on Iran. Secretary of the Treasury Scott Bessent labelled the collapse of the Iranian currency in December 2025 as the "grand culmination" of this strategy.</p>
+        <p>At the State of the Union Address in late February 2026, President Trump stated that Iran had restarted its nuclear program and was developing missiles capable of striking the US. Days later, the IAEA discovered that Iran had hidden highly enriched uranium in an underground facility.</p>
+
+        <h2 id="Prelude">Prelude</h2>
+        <p>Beginning in late December 2025, massive nationwide anti-government protests erupted in Iran. Originally driven by discontent over the economic crisis, they escalated into explicit calls for the overthrow of the Islamic Republic government. On 2 January 2026, Trump threatened a "lock and loaded" military intervention in Iran if the government decided to kill peaceful protesters, and later announced that a US "armada" was heading to the Middle East.</p>
+        <p>Just before the strikes began, on 27 February 2026, Oman's Foreign Minister said a "breakthrough" had been reached in nuclear negotiations and Iran had agreed both to never stockpile enriched uranium and to full verification by the IAEA. However, US Middle East envoy Steve Witkoff said Iran had begun recent nuclear talks by insisting on its "inalienable right" to enrich uranium.</p>
+
+        <h2 id="Hostilities">Hostilities</h2>
+        <h3 id="First_week">First week (28 February – 6 March)</h3>
         
         <div style="float: right; width: 300px; margin: 0 0 1em 1em;">
-            <img src="images/missile-launch.jpg" alt="Ballistic missile launch" style="max-width: 100%; border: 1px solid #54595d;" onerror="this.outerHTML='<div class=\'image-placeholder\' style=\'height: 250px;\'>[Image: images/missile-launch.jpg]<br>Fattah-2 missile launch</div>'">
-            <div style="font-size: 0.85em; color: #eaecf0; padding-top: 5px;">IRGC forces launching a Fattah-2 hypersonic missile during Operation True Promise IV.</div>
+            <img src="images/tehran-strikes.jpg" alt="Tehran strikes" style="max-width: 100%; border: 1px solid #54595d;" onerror="this.outerHTML='<div class=\'image-placeholder\'>[Image: Tehran strikes]<br>Explosions visible over Tehran</div>'">
         </div>
 
-        <p>In response to the decapitation strikes, Iran authorized Operation <i>True Promise IV</i>. Between 1 March and 3 March 2026, the IRGC Aerospace Force launched over 285 medium-range ballistic missiles (including the hypersonic Fattah-2) and swarms of over 1,500 Shahed-136 and Shahed-238 loitering munitions.</p>
-        <p>The targets included:</p>
-        <ul>
-            <li>Nevatim Airbase and Ramon Airbase in Israel.</li>
-            <li>Al Udeid Air Base in Qatar (partially intercepted).</li>
-            <li>Naval Support Activity Bahrain, headquarters of the US Fifth Fleet.</li>
-        </ul>
-        <p>While the Arrow 3, David's Sling, and US Patriot missile defense systems achieved a reported 82% interception rate, several hypersonic missiles breached the defense shield, causing significant damage to the Dimona radar array and port facilities in Haifa. Synchronized attacks by Hezbollah from Lebanon and the Houthis from Yemen stretched coalition air defenses to their limits.</p>
+        <p>On 27 February at 3:38 p.m. EST, Donald Trump gave the order to proceed with Operation Epic Fury. US missiles, drones, and Israeli fighter jets began striking Iran the next day, around 9:45 a.m. IRST. The operation was codenamed Operation Roaring Lion by Israel. The Israeli Air Force (IAF) said that it had struck 500 military targets in western and central Iran, including air defenses and missile launchers, using about 200 fighter jets, in the largest combat sortie in its history.</p>
 
-        <h2 id="Economic_Impact">Global Economic Impact</h2>
-        <p>On 4 March 2026, the IRGC Navy officially announced the mining and closure of the Strait of Hormuz, blocking roughly 20% of global oil consumption. Within 24 hours, the price of Brent crude surged past $180 per barrel, triggering massive sell-offs in global stock markets. The United States announced the release of 150 million barrels from the Strategic Petroleum Reserve, though market analysts suggest this will only offset the shortage for approximately three weeks.</p>
+        <p>The strikes were coupled with cyberattacks on Iranian infrastructure, media, and phone apps, including messages calling on Iranians to rise up against their government. The cyberattacks resulted in a near-total internet blackout in Iran, lasting over 60 hours.</p>
+
+        <p>Iranian forces reacted within hours by launching missiles in an operation it named Operation True Promise IV. Iran struck Israeli targets in Tel Aviv and Haifa as well as multiple countries throughout the Persian Gulf region. Attacks were reported across the Gulf States. Major targets included Bahrain's capital Manama, Kuwait International Airport, the United Arab Emirates' capital Abu Dhabi, Riyadh, and Erbil International Airport.</p>
         
-        <h2 id="See_also">See also</h2>
-        <ul>
-            <li><a href="#">Iran–Israel proxy conflict</a></li>
-            <li><a href="#">2024 Iranian strikes in Israel</a></li>
-            <li><a href="#">List of modern conflicts in the Middle East</a></li>
-        </ul>
+        <p>On 4 March, an Iranian Navy frigate, IRIS Dena, was sunk in the Indian Ocean by United States Navy submarine USS Charlotte, about 40 nautical miles south of Galle, Sri Lanka. The IDF also announced that an F-35I "Adir" shot down a Russian-made Iranian Yak-130 fighter jet over Tehran, the first time that an F-35 has ever shot down a manned fighter jet in air-to-air combat.</p>
+
+        <h3 id="Second_week">Second week (7–13 March)</h3>
+        <p>On 7 March, the US sent a third aircraft carrier, USS George H. W. Bush, to the Middle East. On 8 March, Khamenei's second son, Mojtaba, was designated as Iran's new supreme leader.</p>
+        <p>Israeli airstrikes hit some of Iran's oil storage facilities, killing four people. Strikes on fuel depots near Tehran caused a "river of fire" to pour out along the streets in the surrounding area, and the city became engulfed in a cloud of thick black smoke, causing toxic acidic black rain to fall in the surrounding area.</p>
+        
+        <h3 id="Third_week">Third week (14 March – present)</h3>
+        <p>The US conducted a large bombing raid on Kharg Island, Iran's oil export hub. Military forces were targeted while the oil infrastructure was not targeted "for reasons of decency" according to Trump. Early on 15 March, heavy airstrikes were reported in the Isfahan area, along with explosions near Shiraz and southern Tehran. Iran's military vowed to "pursue and kill" Israeli prime minister Benjamin Netanyahu.</p>
+
+        <h2 id="Strikes_casualties">Strikes and casualties</h2>
+        <p>On 28 February 2026, Ali Khamenei, the supreme leader of Iran, was assassinated. Early on 1 March, Iranian state media announced that Khamenei had been killed in the strikes on his compound.</p>
+        <p>Iranian defense minister Aziz Nasirzadeh and IRGC commander Mohammad Pakpour were killed by Israeli airstrikes. The IDF later stated that it had confirmed the deaths of seven Iranian security leaders.</p>
+        
+        <p><b>Terminal High Altitude Area Defense (THAAD):</b> Formerly Theater High Altitude Area Defense, is an American anti-ballistic missile defense system designed to intercept short-, medium-, and intermediate-range ballistic missiles in their terminal phase. During the conflict, one THAAD radar was reported destroyed or seriously damaged.</p>
+
+        <h2 id="Impact">Impact</h2>
+        <h3 id="Economic">Economic and geopolitical impact</h3>
+        <p>The war has global economic consequences: The conflict led to immediate surges in oil and gas prices, widespread disruptions in aviation and tourism, and heightened volatility in financial markets. Analysts projected potential global inflation increases and risks of recession if disruptions persisted, particularly through closures of key shipping routes like the Strait of Hormuz and strikes on gas and oil facilities.</p>
+        <p>Oil prices rose following a reduction in traffic through the strait, and strikes on oil facilities in countries such as Saudi Arabia and the UAE. Oil prices went over $100 per barrel to $114 per barrel, giving it the highest prices since the COVID-19 pandemic.</p>
 
         <div class="footer">
-            <p>This page was last edited on 15 March 2026, at 14:23 (UTC).</p>
-            <p>Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</p>
+            <p>This page was last edited on 15 March 2026, at 15:28 (UTC).</p>
+            <p>Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</p>
         </div>
     </div>
 </body>
