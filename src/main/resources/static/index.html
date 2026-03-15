@@ -3,34 +3,361 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 Iran War - Archive</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>2026 Iran War - Wikipedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: #101010;
+            color: #eaecf0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        a {
+            color: #6b9bf2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .sidebar {
+            width: 176px;
+            background-color: #101010;
+            padding: 20px;
+            font-size: 0.85em;
+            color: #c8ccd1;
+        }
+        .content {
+            background-color: #202122;
+            border: 1px solid #54595d;
+            border-top: none;
+            padding: 30px 40px;
+            flex-grow: 1;
+            min-height: 100vh;
+        }
+        h1 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2em;
+            font-weight: 400;
+            border-bottom: 1px solid #54595d;
+            padding-bottom: 0.25em;
+            margin-top: 0;
+            color: #fff;
+        }
+        h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5em;
+            font-weight: 400;
+            border-bottom: 1px solid #54595d;
+            padding-bottom: 0.25em;
+            margin-top: 1.5em;
+            color: #fff;
+        }
+        h3 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-top: 1.2em;
+            color: #fff;
+        }
+        p {
+            line-height: 1.6;
+            margin: 0.5em 0;
+        }
+        .infobox {
+            float: right;
+            clear: right;
+            width: 315px;
+            background-color: #2a2b2c;
+            border: 1px solid #54595d;
+            margin: 0.5em 0 1em 1em;
+            padding: 0.2em;
+            font-size: 0.88em;
+            line-height: 1.5em;
+            color: #eaecf0;
+        }
+        .infobox th {
+            text-align: left;
+            vertical-align: top;
+            background-color: #383b3d;
+            padding: 0.2em 0.4em;
+        }
+        .infobox td {
+            vertical-align: top;
+            padding: 0.2em 0.4em;
+        }
+        .infobox caption {
+            font-weight: bold;
+            font-size: 1.25em;
+            padding: 0.2em;
+            background-color: #404346;
+            color: #fff;
+        }
+        .infobox .header {
+            background-color: #404346;
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+        }
+        .toc {
+            display: inline-block;
+            background-color: #2a2b2c;
+            border: 1px solid #54595d;
+            padding: 10px 20px;
+            margin-top: 1em;
+            font-size: 0.95em;
+        }
+        .toc-title {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .toc ul ul {
+            padding-left: 20px;
+        }
+        .note {
+            font-size: 0.8em;
+            color: #a2a9b1;
+            margin-bottom: 10px;
+        }
+        .sidebar-logo-container {
+            font-weight: bold; font-size: 1.2em; margin-bottom: 20px; text-align: center; color: #eaecf0;
+        }
+        .sidebar-logo {
+            width: 100px; height: 100px; background-color: #eaecf0; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 10px; font-size: 2em; color: #202122;
+        }
+        .sidebar-links {
+            border-top: 1px solid #54595d; padding-top: 10px; margin-top: 10px;
+        }
+        .footer {
+            border-top: 1px solid #54595d; margin-top: 40px; padding-top: 10px; font-size: 0.8em; color: #a2a9b1;
+        }
+        .image-placeholder {
+            width: 100%;
+            height: auto;
+            border: 1px solid #54595d;
+            background-color: #383b3d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a2a9b1;
+            font-style: italic;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
 </head>
-<body class="bg-[#0a0a0a] text-[#d1d5db] font-sans selection:bg-blue-500 selection:text-white">
-    <div class="max-w-3xl mx-auto px-6 py-12">
-        <header class="border-b border-gray-800 pb-4 mb-8">
-            <h1 class="text-4xl font-serif text-white italic">2026 Iran War</h1>
-            <p class="text-sm mt-2 text-gray-500 italic">From Wikipedia, the free encyclopedia (Archived 2026)</p>
-        </header>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-logo-container">
+            <div class="sidebar-logo">W</div>
+            <br>Wikipedia<br><span style="font-size:0.7em; font-weight: normal;">The Free Encyclopedia</span>
+        </div>
+        <div class="sidebar-links">
+            <p><a href="#">Main page</a></p>
+            <p><a href="#">Contents</a></p>
+            <p><a href="#">Current events</a></p>
+            <p><a href="#">Random article</a></p>
+            <p><a href="#">About Wikipedia</a></p>
+            <p><a href="#">Contact us</a></p>
+            <p><a href="#">Donate</a></p>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="note">From Wikipedia, the free encyclopedia (Archived 2026)</div>
+        <h1>2026 Iran War</h1>
+        
+        <table class="infobox">
+            <caption>2026 Iran War</caption>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <img src="images/infobox-map.jpg" alt="Map of the Middle East" style="max-width: 100%; border: 1px solid #54595d;" onerror="this.outerHTML='<div class=\'image-placeholder\'>[Image: images/infobox-map.jpg]<br>Geopolitical map of the Middle East</div>'">
+                    <div style="font-size: 0.8em; margin-top: 5px; color: #eaecf0;">Geopolitical map of the Middle East theatre of operations</div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Date</th>
+                <td>28 February 2026 &ndash; present<br><span class="note">(Ongoing)</span></td>
+            </tr>
+            <tr>
+                <th scope="row">Location</th>
+                <td>Middle East, Iran, Israel, Cyprus, Red Sea, Persian Gulf, Caucasus</td>
+            </tr>
+            <tr>
+                <th scope="row">Status</th>
+                <td><b>Ongoing</b><br>
+                    <ul>
+                        <li>Decapitation strikes in Tehran</li>
+                        <li>Strait of Hormuz closed to commercial shipping</li>
+                        <li>Global energy crisis triggered</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="header">Belligerents</td>
+            </tr>
+            <tr>
+                <td style="width: 50%; border-right: 1px solid #54595d;">
+                    <b>Coalition Forces:</b><br>
+                    <span style="display:inline-block; width:20px; text-align:center;">🇺🇸</span> United States<br>
+                    <span style="display:inline-block; width:20px; text-align:center;">🇮🇱</span> Israel<br>
+                    <b>Supported by:</b><br>
+                    <span style="display:inline-block; width:20px; text-align:center;">🇬🇧</span> United Kingdom<br>
+                    <span style="display:inline-block; width:20px; text-align:center;">🇨🇾</span> Cyprus (hosting)
+                </td>
+                <td>
+                    <b>Axis of Resistance:</b><br>
+                    <span style="display:inline-block; width:20px; text-align:center;">🇮🇷</span> Iran<br>
+                    <span style="display:inline-block; width:20px; text-align:center;">🇾🇪</span> Houthis (Yemen)<br>
+                    <span style="display:inline-block; width:20px; text-align:center;">🇱🇧</span> Hezbollah (Lebanon)<br>
+                    <span style="display:inline-block; width:20px; text-align:center;">🇮🇶</span> PMF (Iraq)<br>
+                    <span style="display:inline-block; width:20px; text-align:center;">🇸🇾</span> Syria
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="header">Commanders and leaders</td>
+            </tr>
+            <tr>
+                <td style="border-right: 1px solid #54595d;">
+                    🇺🇸 US President<br>
+                    🇺🇸 CENTCOM Commander<br>
+                    🇮🇱 Israeli Prime Minister<br>
+                    🇮🇱 Chief of General Staff
+                </td>
+                <td>
+                    🇮🇷 Supreme Leader<br>
+                    🇮🇷 President of Iran<br>
+                    🇮🇷 IRGC Commander-in-Chief<br>
+                    🇱🇧 Hezbollah Secretary-General<br>
+                    🇾🇪 Abdul-Malik al-Houthi
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="header">Strength</td>
+            </tr>
+            <tr>
+                <td style="border-right: 1px solid #54595d;">
+                    <b>United States:</b><br>
+                    3 Carrier Strike Groups<br>
+                    150+ Strategic Bombers<br>
+                    2,500+ Aircraft<br>
+                    <b>Israel:</b><br>
+                    169,500 Active personnel<br>
+                    400,000 Reserve personnel
+                </td>
+                <td>
+                    <b>Iran:</b><br>
+                    610,000 Active personnel<br>
+                    350,000 Reserve personnel<br>
+                    3,000+ Ballistic missiles<br>
+                    10,000+ Shahed drones
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="header">Casualties and losses</td>
+            </tr>
+            <tr>
+                <td style="border-right: 1px solid #54595d;">
+                    <b>Military:</b><br>
+                    245 killed<br>
+                    1,200 wounded<br>
+                    2 Destroyers damaged<br>
+                    14 Aircraft lost<br>
+                    <br>
+                    <b>Civilian:</b><br>
+                    1,850 killed (Israel)
+                </td>
+                <td>
+                    <b>Military:</b><br>
+                    4,500+ killed<br>
+                    Unknown wounded<br>
+                    60% Air defense destroyed<br>
+                    4 Naval vessels sunk<br>
+                    <br>
+                    <b>Civilian:</b><br>
+                    12,400+ killed (Iran)<br>
+                    3,200+ killed (Lebanon/Syria)
+                </td>
+            </tr>
+        </table>
 
-        <section class="mb-8 leading-relaxed text-lg">
-            <p>On <span class="font-bold text-white">28 February 2026</span>, a joint military operation codenamed <span class="text-blue-400 italic">Epic Fury</span> (US) and <span class="text-blue-400 italic">Roaring Lion</span> (Israel) initiated a series of decapitation strikes across Tehran.</p>
-        </section>
+        <p>The <b>2026 Iran War</b> (also known as the <b>Third Persian Gulf War</b>) is an ongoing major armed conflict primarily between a United States-led coalition alongside Israel against the Islamic Republic of Iran and its allied proxy network, commonly referred to as the Axis of Resistance. The war officially began on 28 February 2026 following a series of pre-emptive, decapitation strikes against Iranian military and political leadership targets.</p>
 
-        <aside class="float-right w-72 ml-6 mb-6 bg-[#161616] border border-gray-800 p-4 text-sm rounded-lg shadow-2xl">
-            <h2 class="text-center font-bold border-b border-gray-700 pb-2 mb-2 text-white uppercase tracking-widest">Conflict Profile</h2>
-            <div class="space-y-2">
-                <p><span class="text-gray-500">Date:</span> Feb 28, 2026</p>
-                <p><span class="text-gray-500">Status:</span> <span class="text-red-500 animate-pulse">Ongoing</span></p>
-                <p><span class="text-gray-500">Strait of Hormuz:</span> Closed</p>
-                <p><span class="text-gray-500">Location:</span> Middle East, Cyprus, Caucasus</p>
-            </div>
-        </aside>
+        <p>Tensions in the region had been steadily escalating following the conclusion of the 2023–2025 regional crisis, which saw the normalization of limited cross-border skirmishes and drone warfare. Following intelligence reports indicating the imminent deployment of a nuclear device by the Islamic Revolutionary Guard Corps (IRGC), a joint military operation codenamed <a href="#">Epic Fury</a> (United States) and <a href="#">Roaring Lion</a> (Israel) initiated a series of coordinated strikes across Tehran and underground enrichment facilities.</p>
 
-        <article class="space-y-6">
-            <h3 class="text-2xl font-serif border-b border-gray-800 pb-1 text-white italic">Retaliation Phase</h3>
-            <p>Iran responded with Operation <span class="italic">True Promise IV</span>, launching over 285 ballistic missiles and 1,500+ drones targeting Israeli infrastructure and US regional bases in Bahrain and Kuwait.</p>
-        </article>
+        <div style="float: left; width: 300px; margin: 0 1em 1em 0;">
+            <img src="images/tehran-strikes.jpg" alt="Tehran night strikes" style="max-width: 100%; border: 1px solid #54595d;" onerror="this.outerHTML='<div class=\'image-placeholder\' style=\'height: 200px;\'>[Image: images/tehran-strikes.jpg]<br>Tehran night strikes</div>'">
+            <div style="font-size: 0.85em; color: #eaecf0; padding-top: 5px;">Explosions visible over Tehran during the opening hours of Operation Epic Fury.</div>
+        </div>
+
+        <p>Iran responded with Operation <a href="#">True Promise IV</a>, launching an unprecedented barrage of over 285 ballistic missiles and 1,500 drones targeting Israeli infrastructure, as well as US regional bases in Bahrain, Kuwait, and the United Arab Emirates. The conflict rapidly expanded to include full mobilization of Iranian proxy groups across Iraq, Syria, Lebanon, and Yemen, leading to the closure of the Strait of Hormuz and a subsequent global economic shock.</p>
+
+        <div class="toc" style="clear: left;">
+            <div class="toc-title">Contents</div>
+            <ul>
+                <li><a href="#Background">1 Background</a></li>
+                <li><a href="#Opening_Operations">2 Opening Operations</a>
+                    <ul>
+                        <li><a href="#Epic_Fury">2.1 Operations Epic Fury & Roaring Lion</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Retaliation">3 Retaliation Phase</a>
+                    <ul>
+                        <li><a href="#True_Promise_IV">3.1 Operation True Promise IV</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Economic_Impact">4 Global Economic Impact</a></li>
+                <li><a href="#See_also">5 See also</a></li>
+            </ul>
+        </div>
+
+        <h2 id="Background">Background</h2>
+        <p>The strategic environment of the Middle East had deteriorated significantly since 2024. Despite international diplomatic efforts, the enrichment of uranium at the Fordow Fuel Enrichment Plant had allegedly reached weapons-grade (90%) by late 2025. On 15 February 2026, the International Atomic Energy Agency (IAEA) reported an "unexplained absence" of monitoring equipment at several key sites.</p>
+
+        <h2 id="Opening_Operations">Opening Operations</h2>
+        <h3 id="Epic_Fury">Operations Epic Fury & Roaring Lion</h3>
+        <p>At 02:45 IRST on 28 February 2026, the United States and Israel launched a massive, synchronized assault. Operation <i>Roaring Lion</i> focused on the suppression of enemy air defenses (SEAD), utilizing F-35I Adir stealth fighters to neutralize Iranian S-300 and domestically produced Bavar-373 anti-aircraft systems. Concurrently, Operation <i>Epic Fury</i> involved US B-2 Spirit bombers deploying GBU-57 Massive Ordnance Penetrators (MOPs) against deeply buried nuclear facilities in Natanz and Fordow.</p>
+        <p>The strikes also targeted command and control centers in Tehran, reportedly resulting in the deaths of several high-ranking IRGC commanders. A cyberattack attributed to Unit 8200 paralyzed Iran's national power grid for 48 hours, plunging the capital into darkness during the bombardment.</p>
+
+        <h2 id="Retaliation">Retaliation Phase</h2>
+        <h3 id="True_Promise_IV">Operation True Promise IV</h3>
+        
+        <div style="float: right; width: 300px; margin: 0 0 1em 1em;">
+            <img src="images/missile-launch.jpg" alt="Ballistic missile launch" style="max-width: 100%; border: 1px solid #54595d;" onerror="this.outerHTML='<div class=\'image-placeholder\' style=\'height: 250px;\'>[Image: images/missile-launch.jpg]<br>Fattah-2 missile launch</div>'">
+            <div style="font-size: 0.85em; color: #eaecf0; padding-top: 5px;">IRGC forces launching a Fattah-2 hypersonic missile during Operation True Promise IV.</div>
+        </div>
+
+        <p>In response to the decapitation strikes, Iran authorized Operation <i>True Promise IV</i>. Between 1 March and 3 March 2026, the IRGC Aerospace Force launched over 285 medium-range ballistic missiles (including the hypersonic Fattah-2) and swarms of over 1,500 Shahed-136 and Shahed-238 loitering munitions.</p>
+        <p>The targets included:</p>
+        <ul>
+            <li>Nevatim Airbase and Ramon Airbase in Israel.</li>
+            <li>Al Udeid Air Base in Qatar (partially intercepted).</li>
+            <li>Naval Support Activity Bahrain, headquarters of the US Fifth Fleet.</li>
+        </ul>
+        <p>While the Arrow 3, David's Sling, and US Patriot missile defense systems achieved a reported 82% interception rate, several hypersonic missiles breached the defense shield, causing significant damage to the Dimona radar array and port facilities in Haifa. Synchronized attacks by Hezbollah from Lebanon and the Houthis from Yemen stretched coalition air defenses to their limits.</p>
+
+        <h2 id="Economic_Impact">Global Economic Impact</h2>
+        <p>On 4 March 2026, the IRGC Navy officially announced the mining and closure of the Strait of Hormuz, blocking roughly 20% of global oil consumption. Within 24 hours, the price of Brent crude surged past $180 per barrel, triggering massive sell-offs in global stock markets. The United States announced the release of 150 million barrels from the Strategic Petroleum Reserve, though market analysts suggest this will only offset the shortage for approximately three weeks.</p>
+        
+        <h2 id="See_also">See also</h2>
+        <ul>
+            <li><a href="#">Iran–Israel proxy conflict</a></li>
+            <li><a href="#">2024 Iranian strikes in Israel</a></li>
+            <li><a href="#">List of modern conflicts in the Middle East</a></li>
+        </ul>
+
+        <div class="footer">
+            <p>This page was last edited on 15 March 2026, at 14:23 (UTC).</p>
+            <p>Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</p>
+        </div>
     </div>
 </body>
 </html>
