@@ -38,9 +38,29 @@ pipeline {
         }
         stage('Deploy to Nexus') {
     steps {
-        script {
-            // Using the Maven 'deploy' goal to push the artifact
-            sh 'mvn deploy -DskipTests'
+        // This wrapper handles the settings.xml creation automatically
+        withCredentials([usernamePassword(credentialsId: 'nexus-credentials', 
+                         passwordVariable: 'NEXUS_PWD', 
+                         usernameVariable: 'NEXUS_USER')]) {
+            sh """
+                mvn deploy -DskipTests -s /dev/null \
+                -DaltDeploymentRepository=nexus-snapshots::default::http://nexus-nexus-repository-manager:8081/repository/maven-snapshots/ \
+                --settings <(echo "
+                <settings>
+                    <servers>
+                        <server>
+                            <id>nexus-releases</id>
+                            <username>${NEXUS_USER}</username>
+                            <password>${NEXUS_PWD}</password>
+                        </server>
+                        <server>
+                            <id>nexus-snapshots</id>
+                            <username>${NEXUS_USER}</username>
+                            <password>${NEXUS_PWD}</password>
+                        </server>
+                    </servers>
+                </settings>")
+            """
         }
     }
 }
