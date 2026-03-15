@@ -36,5 +36,13 @@ pipeline {
         stage('Build & Package') {
             steps { sh 'mvn package -DskipTests' }
         }
+        stage('Deploy to Nexus') {
+    steps {
+        script {
+            // Using the Maven 'deploy' goal to push the artifact
+            sh 'mvn deploy -DskipTests'
+        }
+    }
+}
     }
 }
