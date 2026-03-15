@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'jenkins-agent' // MUST match the label you set in Cloud settings
+    }
     tools {
         maven 'maven' 
     }
@@ -7,13 +9,12 @@ pipeline {
         stage('Compile') {
             steps { sh 'mvn clean compile' }
         }
+        
         stage('Security Scan: OWASP') {
-            environment {
-                JAVA_OPTS = "-Xmx1024m"
-            }
             steps {
+                // Ensure the dir exists before scanning
+                sh 'mkdir -p /home/jenkins/agent/nvd-data'
                 withCredentials([string(credentialsId: 'NVD-API-KEY', variable: 'NVD_KEY')]) {
-                    // Added --data parameter to point to the Volume Mount
                     dependencyCheck additionalArguments: """
                         --nvdApiKey ${NVD_KEY} 
                         --format HTML 
@@ -22,13 +23,16 @@ pipeline {
                 }
             }
         }
-    stage('Security Scan: SonarQube') {
-    steps {
-        withSonarQubeEnv('SonarQube') { // 'SonarQube' must match the name in System settings
-            sh 'mvn sonar:sonar -Dsonar.token=$SONAR_AUTH_TOKEN'
+
+        stage('Security Scan: SonarQube') {
+            steps {
+                withSonarQubeEnv('SonarQube') { 
+                    // Use the Maven wrapper for sonar
+                    sh 'mvn sonar:sonar'
+                }
+            }
         }
-    }
-}
+
         stage('Build & Package') {
             steps { sh 'mvn package -DskipTests' }
         }
